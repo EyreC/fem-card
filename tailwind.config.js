@@ -15,11 +15,22 @@ module.exports = {
         'soft-violet':'#aa5cdb',
         'dark-blue': '#090b1a',
         'desaturate-dark-blue': '#1b1938'
-      }
+      },
+      backgroundImage: {
+        'card-mobile': "url('@/assets/image-header-mobile.jpg')",
+        'card-desktop': "url('@/assets/image-header-desktop.jpg')",
+       },
+       padding: {
+         '2/3': '66.66667%',
+         '1/2': '50%',
+         'full': '100%'
+       }
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 }

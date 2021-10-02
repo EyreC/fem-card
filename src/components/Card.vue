@@ -1,14 +1,17 @@
 <template>
-  <div class="mx-8 rounded-xl bg-desaturate-dark-blue pb-3 md:pb-0 flex flex-initial flex-col md:flex-row-reverse md:max-h-96 md:max-w-4xl">
+  <div class="mx-8 rounded-xl bg-desaturate-dark-blue pb-3 md:pb-0 flex flex-col md:flex-row-reverse md:max-h-96 md:max-w-4xl">
     <!-- <div class="img-test absolute insert-0 w-full  bg-cover bg-center rounded-xl"> --->
-    <div class="bg-soft-violet img-filter w-full rounded-t-xl">
-        <img class="opacity-30 md:hidden" src="@/assets/image-header-mobile.jpg"/>
-        <img class="opacity-30 hidden md:block min-h-full" src="@/assets/image-header-desktop.jpg"/>
-    </div>
-    <div>
-      <div class="mx-7 mb-4">
+      <div class="bg-card-mobile pt-full bg-no-repeat img-bg-size mobile-img-flex-basis md:hidden">
+
+      </div>
+      <div class="bg-card-desktop rounded-r-xl pr-1/2 bg-cover hidden md:block">
+
+      </div>
+  
+    <div class="md:mb-4">
+      <div class="mx-7 mb-4 offset-margin md:mt-0">
       
-              <h1 class="font-bold text-white text-xl mt-10">Get <span class="text-soft-violet">insights</span> that <br> help your business <br> grow.</h1>
+              <h1 class="font-bold text-white text-xl mt-10">Get <span class="text-soft-violet">insights</span> that help your business grow.</h1>
               <p class="mt-2 text-gray-300">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
       </div>
       <div class="flex flex-col md:flex-row justify-around">
@@ -40,18 +43,16 @@ export default {
 </script>
 
 <style>
+.mobile-img-flex-basis {
+  height: 200px;
+}
+.offset-margin {
+  margin-top: -30%;
+}
+.img-bg-size {
+  background-size: 100%;
+}
 .img-filter{
-  /* min-width: 100%; */
-  /* height: 0; */
-    /* padding-top: 66.64%; (img-height / img-width * container-width) */
-                /* (853 / 1280 * 100) */
-  
-
-  /* background-image: url(@/assets/image-header-mobile.jpg);
-  background-color: #aa5cdb;
-  background-blend-mode: overlay; */
   filter:contrast(200%) brightness(0.51);
-  
-  
 }
 </style>
