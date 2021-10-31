@@ -5,7 +5,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "deploy": "vite build && gh-pages -d dist"
+    "deploy": "vite build --base=/fem-card/ && gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.2.1",

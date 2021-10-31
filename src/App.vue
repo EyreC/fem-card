@@ -1,13 +1,13 @@
 <script setup>
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
 import Card from './components/Card.vue'
 </script>
 
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
-  <div class="my-6 md:my-0 md:h-screen flex flex-row justify-center items-center rounded-t-xl">
+  
+  <div class="my-6 md:my-0 md:h-screen flex flex-row justify-center items-center rounded-t-xl"> -
   <Card/>
   </div>
 </template>

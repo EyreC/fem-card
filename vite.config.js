@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "https://eyrec.github.io/fem-carddd/",
   plugins: [vue()],
   resolve: {
     alias: {
