@@ -1,7 +1,6 @@
 <template>
   <div class="mx-8 rounded-xl bg-desaturate-dark-blue pb-3 md:pb-0 flex flex-col md:flex-row-reverse md:max-h-96 md:max-w-4xl">
-    <!-- <div class="img-test absolute insert-0 w-full  bg-cover bg-center rounded-xl"> --->
-      <div class="bg-card-mobile pt-full bg-no-repeat img-bg-size mobile-img-flex-basis md:hidden">
+      <div class="bg-card-mobile pt-full bg-no-repeat img-bg-size mobile-img-height md:hidden">
 
       </div>
       <div class="bg-card-desktop rounded-r-xl pr-1/2 bg-cover hidden md:block">
@@ -43,7 +42,7 @@ export default {
 </script>
 
 <style>
-.mobile-img-flex-basis {
+.mobile-img-height {
   height: 200px;
 }
 .offset-margin {
